@@ -4183,6 +4183,7 @@
       <extensions/>
       <field type="float[21]" name="covariance">Row-major representation of pose 6x6 cross-covariance matrix upper right triangle (states: x_global, y_global, z_global, roll, pitch, yaw; first six entries are the first ROW, next five entries are the second ROW, etc.). If unknown, assign NaN value to first element in the array.</field>
       <field type="uint8_t" name="reset_counter">Estimate reset counter. This should be incremented when the estimate resets in any of the dimensions (position, velocity, attitude, angular speed). This is designed to be used when e.g an external SLAM system detects a loop-closure and the estimate jumps.</field>
+      <field type="uint16_t" name="delay">Measurement delay in milli-seconds. This is the delay of the measurement relative to the Timestamp.</field>
     </message>
     <message id="102" name="VISION_POSITION_ESTIMATE">
       <description>Local position/attitude estimate from a vision source.</description>
