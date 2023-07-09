@@ -340,6 +340,16 @@
         <param index="6" label="Longitude">Longitude</param>
         <param index="7" label="Altitude" units="m">Altitude, not used. Should be sent as NaN. May be supported in a future version of this message.</param>
       </entry>
+      <entry value="43004" name="MAV_CMD_EXTERNAL_WIND_ESTIMATE" hasLocation="false" isDestination="false">
+        <description>Provide an external wind estimate at the aircraft flight altitude for use when dead-reckoning. This can be sent prior to takeoff to improve navigation accuracy if GPS loss occurs early in flight.</description>
+        <param index="1" label="speed" units="m/s">Wind speed at the aircraft flight altitude.</param>
+        <param index="2" label="direction" units="deg">Wind direction at the aircraft flight altitude. This is the direction wrt true North that the wind is coming from.</param>
+        <param index="3">Empty</param>
+        <param index="4">Empty</param>
+        <param index="5">Empty</param>
+        <param index="6">Empty</param>
+        <param index="7">Empty</param>
+      </entry>
     </enum>
     <enum name="SCRIPTING_CMD">
       <entry value="0" name="SCRIPTING_CMD_REPL_START">
